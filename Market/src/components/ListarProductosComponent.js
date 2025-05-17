@@ -3,7 +3,6 @@ import { View, FlatList, TouchableOpacity, Image, Text, StyleSheet, Alert, Refre
 import { useNavigation, useIsFocused } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-// Mapeo de imágenes locales
 const imagenes = {
   laptop: require('../../assets/laptop.jpg'),
   mouse: require('../../assets/mouse.jpg'),
@@ -17,11 +16,9 @@ export default function ListarProductos() {
   const navigation = useNavigation();
   const isFocused = useIsFocused();
 
-  // Cargar productos (simulando API)
   const cargarProductos = () => {
     setRefreshing(true);
     setTimeout(() => {
-      // Datos mock que coinciden con tu db.json
       const datosMock = [
         {
           id: 1,
@@ -65,7 +62,6 @@ export default function ListarProductos() {
     }, 500);
   };
 
-  // Eliminar producto
   const eliminarProducto = (id) => {
     Alert.alert(
       "Confirmar",
@@ -83,7 +79,6 @@ export default function ListarProductos() {
     );
   };
 
-  // Actualizar lista al enfocar
   useEffect(() => {
     if (isFocused) cargarProductos();
   }, [isFocused]);
