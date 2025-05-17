@@ -1,0 +1,47 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "Blanca",
+      "contrasenia": "1234"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Laptop HP EliteBook",
+      "descripcion": "Core i7 16GB RAM 512GB SSD",
+      "preciodecosto": 900,
+      "preciodeventa": 1200,
+      "cantidad": 8,
+      "fotografia": "laptop"
+    },
+    {
+      "id": 2,
+      "nombre": "Mouse Logitech MX",
+      "descripcion": "Inalámbrico ergonómico",
+      "preciodecosto": 30,
+      "preciodeventa": 60,
+      "cantidad": 15,
+      "fotografia": "mouse"
+    },
+    {
+      "id": 3,
+      "nombre": "Teclado Mecánico RGB",
+      "descripcion": "Switches azules retroiluminado",
+      "preciodecosto": 40,
+      "preciodeventa": 80,
+      "cantidad": 12,
+      "fotografia": "teclado"
+    },
+    {
+      "id": 4,
+      "nombre": "iPhone 13 Pro",
+      "descripcion": "128GB Plata",
+      "preciodecosto": 800,
+      "preciodeventa": 1100,
+      "cantidad": 5,
+      "fotografia": "telefono"
+    }
+  ]
+}
