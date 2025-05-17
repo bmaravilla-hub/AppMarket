@@ -4,18 +4,18 @@ import { Input, Icon } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 
 export default function PantallaInicio() {
-  const [usuario, setUsuario] = useState('admin'); // Valor por defecto para pruebas
-  const [contrasena, setContrasena] = useState('1234'); // Valor por defecto para pruebas
+  const [usuario, setUsuario] = useState('admin');
+  const [contrasena, setContrasena] = useState('1234'); 
   const navigation = useNavigation();
 
   const handleLogin = () => {
-    console.log("Botón presionado!"); // Debug 1
+    console.log("Botón presionado!"); 
     
     if (usuario === 'admin' && contrasena === '1234') {
-      console.log("Credenciales correctas, navegando..."); // Debug 2
+      console.log("Credenciales correctas, navegando..."); 
       navigation.navigate('ListarProductos');
     } else {
-      console.log("Credenciales incorrectas"); // Debug 3
+      console.log("Credenciales incorrectas"); 
       Alert.alert('Error', 'Credenciales incorrectas. Usa admin/1234');
     }
   };
